@@ -54,11 +54,12 @@ where `mygreatpassword` is your secret password and `action_1` the name of the a
 
 ### IFTTT
 With IFTTT, you need to use the [Maker channel](https://ifttt.com/maker_webhooks) in order to send POST requests to your web server. The following parameters need to be specified: 
-Parameter|Value
----------|-----
-URL|URL of your webserver. You need to specify the external IP which you can get by running `curl ifconfig.co`
-Method|POST
-Content type|application/json
-Body|`{"auth":"mygreatpassword","action":"action_1"}` where `mygreatpassword` and `action_1` need to be changed as explained in `curl` example
+
+| Parameter | Value |
+| --- | --- |
+| URL | URL of your webserver. You need to specify the external IP which you can get by running `curl ifconfig.co` |
+| Method | POST |
+| Content type | application/json |
+| Body | `{"auth":"mygreatpassword","action":"action_1"}` where `mygreatpassword` and `action_1` need to be changed as explained in `curl` example |
 
 
