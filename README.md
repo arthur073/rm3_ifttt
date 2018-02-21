@@ -30,4 +30,20 @@ Open the `run.py` file and update the `passcode` variable to the value you want 
 # User variables
 passcode="mygreatpassword"
 ```
+You are all set!
+
+## Usage
+To start the web server, run: 
+```
+python run.py 1234
+```
+where `1234` is the port number on which the web server will be launched.
+
+Once launched, you can learn and send commands to your Broadlink RM3 using HTTP requests. Here is an example with `curl`:
+```
+curl -X POST http://localhost:1234 -H 'content-type: application/json' -d '{"auth":"mygreatpassword", "action":"action_1"}
+``` 
+where `mygreatpassword` is your secret password and `action_1` the name of the action you want to perform on your Broadlink device. 
+- The first time the request is launched, the device is in **learning** mode (white LED)
+- Once the action is learned, the device is in **play** mode and will repeat the learned infrared code
 
