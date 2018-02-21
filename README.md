@@ -62,6 +62,22 @@ With IFTTT, you need to use the [Maker channel](https://ifttt.com/maker_webhooks
 | Content type | application/json |
 | Body | `{"auth":"mygreatpassword","action":"action_1"}` where `mygreatpassword` and `action_1` need to be changed as explained in `curl` example |
 
+## Auto start at boot time
+This script can be run as a service to be automatically started when your machine boots. 
+
+In order to achieve this, edit the file `service/rm3_ifttt` and change the user variablesas follows: 
+- `rm3_ifttt_path` should be the absolute path of the run.py file on your machine
+- `rm3_ifttt_port` should be the port on which your webserver is launched
+
+Then copy the `service/rm3_ifttt` file to your `/etc/init.d/` directory:
+```
+sudo cp service/rm3_ifttt /etc/init.d/rm3_ifttt
+``` 
+And add it to the services to launch at startup: 
+```
+sudo systemctl enable rm3_ifttt
+```
+
 ## License 
 The MIT License (MIT) 
 
