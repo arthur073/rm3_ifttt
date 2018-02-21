@@ -20,7 +20,7 @@ python rm3_mini_controller/test_run.py
 This above script will scan your network for any Broadlink device and print its IP address, port and MAC address. Once found, update the file `rm3_mini_controller/BlackBeanControl.ini` with this information, so that it looks like this:
 ```
 [General]
-IPAAddres s= 192.168.1.1
+IPAddress = 192.168.1.1
 Port = 80
 MACAddress = AA:BB:CC:DD:EE:FF
 Timeout = 10
