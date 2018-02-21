@@ -1,0 +1,3 @@
+[submodule "rm3_mini_controller"]
+	path = rm3_mini_controller
+	url = https://github.com/TheGU/rm3_mini_controller
