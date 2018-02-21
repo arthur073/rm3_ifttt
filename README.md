@@ -7,13 +7,13 @@ Credit goes to https://github.com/TheGU/rm3_mini_controller (which itself is bas
 This repository only exposes these APIs using the **web.py** framework.
 
 ## Setup
-Clone this repository on your local machine and install dependencies.
+Clone this repository on your local machine and install dependencies:
 ```
 git clone https://github.com/arthur073/rm3_ifttt
 cd rm3_ifttt
 pip install -r rm3_mini_controller/requirements.txt
 ```
-Discover the broadlink device on your network.
+Discover the broadlink device on your network:
 ```
 python rm3_mini_controller/test_run.py
 ```
@@ -25,3 +25,9 @@ Port = 80
 MACAddress = AA:BB:CC:DD:EE:FF
 Timeout = 10
 ``` 
+Open the `run.py` file and update the `passcode` variable to the value you want (this will later be used in IFTTT):
+```python
+# User variables
+passcode="mygreatpassword"
+```
+
