@@ -41,7 +41,7 @@ You are all set!
 ## Usage
 ### Generic principle
 Once started, the web server will listen for any incoming POST requests on the specified port. The 
-request needs to specify the actionyou want to perform and the secret password. 
+request needs to specify the **action** you want to perform and the **secret password**. 
 - The first time the request is launched, the device is in **learning** mode (white LED)
 - Once the action is learned, the device is in **play** mode and will repeat the learned infrared code
 
